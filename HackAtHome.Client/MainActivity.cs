@@ -53,7 +53,8 @@
 
             if ((result != null && result.Status == Status.Success) || dataStudent != null)
             {
-                dataStudent = new string[2];
+                if (dataStudent == null)
+                    dataStudent = new string[2];
                 dataStudent[0] = result != null ? result.Token : dataStudent[0];
                 dataStudent[1] = result != null ? result.FullName : dataStudent[1];
                 Intent intent = new Intent(this, typeof(listItemActivity));

@@ -19,7 +19,6 @@
         /// <summary>
         /// 0 - Token ||
         /// 1 - FullName ||
-        /// 2 - DateAutentication 
         /// </summary>
         private string[] dataStudent;
 
